@@ -296,4 +296,10 @@ public class DateTools {
 			return (second + 1) + "";
 		}
 	}
+
+	public static String getCurrent() {
+		SimpleDateFormat sdfTime = new SimpleDateFormat(
+				"yyyy-MM-dd HH:mm:ss");
+		return sdfTime.format(new Date());
+	}
 }
